@@ -1,17 +1,21 @@
-import { useState } from 'react'
+import { Flex, useMediaQuery, ChakraProvider, extendTheme } from '@chakra-ui/react'
 import './App.css'
+import Form from './components/Form'
+import SideBar from './components/Sidebar'
+import theme from './theme'
+
 
 function App() {
-  const [count, setCount] = useState(0)
-
+  const [isMobile] = useMediaQuery('(max-width: 768px)')
   return (
-    <div className="App">
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-      </div>
-    </div>
+    <ChakraProvider theme={theme}>
+      <Flex m="24px" direction={'row'} wrap="wrap" minH="100vh" w="100w" alignItems="center" gap="32px" justifyContent="center">
+        <Flex gap="32px" wrap="wrap" maxW="800px">
+          <Form isMobile={isMobile} />
+        </Flex>
+        <SideBar />
+      </Flex>
+    </ChakraProvider>
   )
 }
 
