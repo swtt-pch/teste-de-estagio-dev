@@ -1,5 +1,4 @@
-import { FormControl, FormLabel, Stack, Input, Textarea, Button, Flex, Text, Heading } from '@chakra-ui/react'
-import React from 'react'
+import { FormControl, FormLabel, Stack, Input, Textarea, Button, Flex, Text } from '@chakra-ui/react'
 
 function Form({ isMobile }) {
   return (
@@ -18,7 +17,7 @@ function Form({ isMobile }) {
       )}
 
       <form>
-        <Flex p="32px" gap="32px" wrap="wrap" bg="white" boxShadow="base" rounded="md">
+        <Flex p={8} gap={8} wrap="wrap" bg="white" boxShadow="base" rounded="md">
           {isMobile ? (
             <>
               <Text fontSize="4xl" lineHeight="10" fontWeight="extrabold">
@@ -31,55 +30,55 @@ function Form({ isMobile }) {
                 <FormLabel fontSize="md" lineHeight="6" fontWeight="medium">
                   Name
                 </FormLabel>
-                <Input borderColor="gray.200" borderRadius='6px' colorScheme="whiteAlpha" />
+                <Input borderColor="gray.200" borderRadius={1.5} colorScheme="whiteAlpha" />
               </FormControl>
               <FormControl>
                 <FormLabel fontSize="md" lineHeight="6" fontWeight="medium">
                   Company Name
                 </FormLabel>
-                <Input borderColor="gray.200" borderRadius='6px' />
+                <Input borderColor="gray.200" borderRadius={1.5} />
               </FormControl>
               <FormControl>
                 <FormLabel fontSize="md" lineHeight="6" fontWeight="medium">
                   Email
                 </FormLabel>
-                <Input borderColor="gray.200" borderRadius='6px' />
+                <Input borderColor="gray.200" borderRadius={1.5} />
               </FormControl>
               <FormControl>
                 <FormLabel fontSize="md" lineHeight="6" fontWeight="medium">
                   Phone Number
                 </FormLabel>
-                <Input borderColor="gray.200" borderRadius='6px' />
+                <Input borderColor="gray.200" borderRadius={1.5} />
               </FormControl>
             </>
           ) : (
             <>
-              <Stack direction="row" width="100%" columnGap="32px">
+              <Stack direction="row" width="100%" columnGap={8}>
                 <FormControl>
                   <FormLabel fontSize="md" lineHeight="6" fontWeight="medium">
                     Name
                   </FormLabel>
-                  <Input borderColor="gray.200" borderRadius='6px' colorScheme="whiteAlpha" />
+                  <Input borderColor="gray.200" borderRadius={1.5} colorScheme="whiteAlpha" />
                 </FormControl>
                 <FormControl>
                   <FormLabel fontSize="md" lineHeight="6" fontWeight="medium">
                     Company Name
                   </FormLabel>
-                  <Input borderColor="gray.200" borderRadius='6px' />
+                  <Input borderColor="gray.200" borderRadius={1.5} />
                 </FormControl>
               </Stack>
-              <Stack direction="row" width="100%" columnGap="32px">
+              <Stack direction="row" width="100%" columnGap={8}>
                 <FormControl>
                   <FormLabel fontSize="md" lineHeight="6" fontWeight="medium">
                     Email
                   </FormLabel>
-                  <Input borderColor="gray.200" borderRadius='6px' />
+                  <Input borderColor="gray.200" borderRadius={1.5} />
                 </FormControl>
                 <FormControl>
                   <FormLabel fontSize="md" lineHeight="6" fontWeight="medium">
                     Phone Number
                   </FormLabel>
-                  <Input borderColor="gray.200" borderRadius='6px' />
+                  <Input borderColor="gray.200" borderRadius={1.5} />
                 </FormControl>
               </Stack>
             </>
@@ -89,15 +88,15 @@ function Form({ isMobile }) {
             <FormLabel fontSize="md" lineHeight="6" fontWeight="medium">
               Subject
             </FormLabel>
-            <Input borderColor="gray.200" borderRadius='6px' />
+            <Input borderColor="gray.200" borderRadius={1.5} />
           </FormControl>
           <FormControl>
             <FormLabel fontSize="md" lineHeight="6" fontWeight="medium">
               Your Message
             </FormLabel>
-            <Textarea borderColor="gray.200" borderRadius='6px' />
+            <Textarea borderColor="gray.200" borderRadius={1.5} />
           </FormControl>
-          <Button bg="#EC7E83" color="white" borderRadius='4px' fontSize='lg' lineHeight='7' fontWeight='semibold'>
+          <Button bg="#EC7E83" color="white" borderRadius="4px" fontSize="lg" lineHeight="7" fontWeight="semibold">
             Submit
           </Button>
         </Flex>

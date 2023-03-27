@@ -1,4 +1,4 @@
-import { Flex, useMediaQuery, ChakraProvider, extendTheme } from '@chakra-ui/react'
+import { Flex, useMediaQuery, ChakraProvider } from '@chakra-ui/react'
 import Form from './components/Form'
 import SideBar from './components/Sidebar'
 import theme from './theme'
@@ -7,8 +7,8 @@ function App() {
   const [isMobile] = useMediaQuery('(max-width: 768px)')
   return (
     <ChakraProvider theme={theme}>
-      <Flex m="24px" direction={'row'} wrap="wrap" minH="100vh" w="100w" alignItems="center" gap="32px" justifyContent="center">
-        <Flex gap="32px" wrap="wrap" maxW="800px">
+      <Flex m={6} direction={'row'} wrap="wrap"  w="100w" alignItems="center" gap={8} justifyContent="center">
+        <Flex gap={8} wrap="wrap" maxW="container.md">
           <Form isMobile={isMobile} />
         </Flex>
         <SideBar />
