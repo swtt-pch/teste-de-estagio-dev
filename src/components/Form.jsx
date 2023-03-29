@@ -1,4 +1,4 @@
-import { FormControl, FormLabel, Stack, Input, Textarea, Button, Flex, Text } from '@chakra-ui/react'
+import { FormControl, FormLabel, Stack, Input, Textarea, Button, Flex, Text, Box } from '@chakra-ui/react'
 
 function Form({ isMobile }) {
   return (
@@ -16,7 +16,7 @@ function Form({ isMobile }) {
         <></>
       )}
 
-      <form>
+      <Box as='form'>
         <Flex p={8} gap={8} wrap="wrap" bg="white" boxShadow="base" rounded="md">
           {isMobile ? (
             <>
@@ -100,7 +100,7 @@ function Form({ isMobile }) {
             Submit
           </Button>
         </Flex>
-      </form>
+      </Box>
     </>
   )
 }
