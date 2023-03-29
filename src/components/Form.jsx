@@ -30,25 +30,25 @@ function Form({ isMobile }) {
                 <FormLabel fontSize="md" lineHeight="6" fontWeight="medium">
                   Name
                 </FormLabel>
-                <Input borderColor="gray.200" borderRadius={1.5} colorScheme="whiteAlpha" />
+                <Input borderColor="gray.200" borderRadius='6px' colorScheme="whiteAlpha" />
               </FormControl>
               <FormControl>
                 <FormLabel fontSize="md" lineHeight="6" fontWeight="medium">
                   Company Name
                 </FormLabel>
-                <Input borderColor="gray.200" borderRadius={1.5} />
+                <Input borderColor="gray.200" borderRadius='6px' />
               </FormControl>
               <FormControl>
                 <FormLabel fontSize="md" lineHeight="6" fontWeight="medium">
                   Email
                 </FormLabel>
-                <Input borderColor="gray.200" borderRadius={1.5} />
+                <Input borderColor="gray.200" borderRadius='6px' />
               </FormControl>
               <FormControl>
                 <FormLabel fontSize="md" lineHeight="6" fontWeight="medium">
                   Phone Number
                 </FormLabel>
-                <Input borderColor="gray.200" borderRadius={1.5} />
+                <Input borderColor="gray.200" borderRadius='6px' />
               </FormControl>
             </>
           ) : (
@@ -58,13 +58,13 @@ function Form({ isMobile }) {
                   <FormLabel fontSize="md" lineHeight="6" fontWeight="medium">
                     Name
                   </FormLabel>
-                  <Input borderColor="gray.200" borderRadius={1.5} colorScheme="whiteAlpha" />
+                  <Input borderColor="gray.200" borderRadius='6px' colorScheme="whiteAlpha" />
                 </FormControl>
                 <FormControl>
                   <FormLabel fontSize="md" lineHeight="6" fontWeight="medium">
                     Company Name
                   </FormLabel>
-                  <Input borderColor="gray.200" borderRadius={1.5} />
+                  <Input borderColor="gray.200" borderRadius='6px' />
                 </FormControl>
               </Stack>
               <Stack direction="row" width="100%" columnGap={8}>
@@ -72,13 +72,13 @@ function Form({ isMobile }) {
                   <FormLabel fontSize="md" lineHeight="6" fontWeight="medium">
                     Email
                   </FormLabel>
-                  <Input borderColor="gray.200" borderRadius={1.5} />
+                  <Input borderColor="gray.200" borderRadius='6px' />
                 </FormControl>
                 <FormControl>
                   <FormLabel fontSize="md" lineHeight="6" fontWeight="medium">
                     Phone Number
                   </FormLabel>
-                  <Input borderColor="gray.200" borderRadius={1.5} />
+                  <Input borderColor="gray.200" borderRadius='6px' />
                 </FormControl>
               </Stack>
             </>
@@ -88,13 +88,13 @@ function Form({ isMobile }) {
             <FormLabel fontSize="md" lineHeight="6" fontWeight="medium">
               Subject
             </FormLabel>
-            <Input borderColor="gray.200" borderRadius={1.5} />
+            <Input borderColor="gray.200" borderRadius='6px' />
           </FormControl>
           <FormControl>
             <FormLabel fontSize="md" lineHeight="6" fontWeight="medium">
               Your Message
             </FormLabel>
-            <Textarea borderColor="gray.200" borderRadius={1.5} />
+            <Textarea borderColor="gray.200" borderRadius='6px' />
           </FormControl>
           <Button w={isMobile? '100%' : 'auto'} bg="#EC7E83" color="white" borderRadius="4px" fontSize="lg" lineHeight="7" fontWeight="semibold">
             Submit
