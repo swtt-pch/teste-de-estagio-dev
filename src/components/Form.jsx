@@ -96,7 +96,7 @@ function Form({ isMobile }) {
             </FormLabel>
             <Textarea borderColor="gray.200" borderRadius={1.5} />
           </FormControl>
-          <Button bg="#EC7E83" color="white" borderRadius="4px" fontSize="lg" lineHeight="7" fontWeight="semibold">
+          <Button w={isMobile? '100%' : 'auto'} bg="#EC7E83" color="white" borderRadius="4px" fontSize="lg" lineHeight="7" fontWeight="semibold">
             Submit
           </Button>
         </Flex>
