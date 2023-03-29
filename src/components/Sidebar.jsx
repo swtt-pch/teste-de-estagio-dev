@@ -11,7 +11,7 @@ function SideBar() {
             Our Commitment
           </Text>
           <Card color="gray.500">
-            <CardBody backgroundColor="white" p={7}>
+            <CardBody backgroundColor="white" p={7} borderRadius='6px'>
               <Text fontSize="lg" lineHeight="7" fontWeight="normal">
                 Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vivamus hendrerit justo eu diam varius dictum
               </Text>
@@ -23,7 +23,7 @@ function SideBar() {
             Art Directing
           </Text>
           <Card color="gray.500">
-            <CardBody backgroundColor="white" p={7} alignContent="center">
+            <CardBody backgroundColor="white" p={7} alignContent="center" borderRadius='6px'>
               <Text fontSize="lg" lineHeight="7" fontWeight="normal">
                 Proin sapien ligula, aliquam eget enim ac, fringilla hendrerit nulla.
               </Text>
